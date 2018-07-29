@@ -1,0 +1,67 @@
+
+Node.js comes with virtual environment called REPL (aka Node shell). REPL stands for Read-Eval-Print-Loop. 
+It is a quick and easy way to test simple Node.js/JavaScript code. 
+
+.break or ctrl+c = break the code
+.help = help commands
+.exit = exit from node
+
+In js, we can use single quote and double quote in string
+
+semicolon are optional in js
+
+Type "process. + tab" in node cmd , we will get the all the option for that process(node cmd process)  
+ex - process.title
+ex - process.version
+ex - process.argv - returns number of arguments which has been passed
+
+typeof can be used for getting the type the variable
+
+typeof console.log = function
+typeof console = object
+
++ = addition and concatenation
+* = only muliplication even if one is string and other is number
+Beacause in case of multiply , it will try t convert everything to number if it is not able to
+then it will give NaN
+
+---------------
+An object is a container which includes state and behaviour.
+
+we get state from the properties
+and behaviour from methods
+
+console is an object in js
+It has following methods-
+log,warn,error,....
+
+process is an object who show the state 
+It has following properties ot attributes
+argv,exit,title,...
+
+Type "console + enter",
+you will get all the methods in the console object
+
+----------
+require and exports
+
+"exports" is an object in js ,
+we can create a property for the "exports"
+and assign any object or anything other to that property
+
+"require" is a method for getting the file,
+the "require" assigned variable will get the whole "export" object.
+and not one property of the export object.
+-----------
+"nodeunit"
+
+nodeunit is a package is for node js unit testing
+
+If we are using one file for more than one test , then those tests can effect
+other tests, so we should set different environment for each test
+
+To set the different environment for each test,use exports["setUp"],
+this method will be called each time before next test.
+In this method we can set anything so that next test will not affect.
+
+
